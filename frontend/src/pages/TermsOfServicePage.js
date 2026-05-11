@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Badge } from '../components/ui/badge';
 import { Card, CardContent } from '../components/ui/card';
-import { Scale } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const termsSections = [
   {
@@ -61,6 +61,16 @@ const termsSections = [
       'Some platform activities may involve fees, processing charges, or third-party payment costs, which may be shown during the relevant flow.',
       'By initiating a transaction, you authorize INVESTYZ and its partners to process it according to your instructions.',
       'We are not responsible for delays caused by banks, payment gateways, networks, third-party outages, or regulatory holds outside our control.',
+    ],
+  },
+  {
+    title: '8.1 Refund, Cancellation, And Replacement Policy',
+    content: [
+      'All transactions on INVESTYZ are final once completed and confirmed on the platform.',
+      'Users are responsible for verifying all transaction details, amounts, and investment parameters before confirming any participation.',
+      'Refunds: Requests for refunds must be submitted within 48 hours of transaction completion and are subject to verification of grounds such as duplicate transactions or processing errors. Refunds will be processed back to the original payment method within 7-10 business days.',
+      'Cancellations: Cancellations of ongoing or locked participation may not be permitted depending on the underlying asset lock-in period and applicable legal agreements. Cancellation requests must comply with the specific investment terms shown at the time of participation.',
+      'Replacements: If a transaction fails due to platform or technical error, INVESTYZ will work to resolve or replace the transaction at no additional cost to the user.',
     ],
   },
   {
@@ -171,11 +181,11 @@ const TermsOfServicePage = () => {
               <CardContent className="p-7 md:p-8">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-2xl bg-primary/10">
-                    <Scale className="h-6 w-6 text-primary" />
+                    <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm uppercase tracking-[0.24em] text-primary/80">
-                      Contact Placeholder
+                      Contact Us
                     </p>
                     <h2 className="text-2xl md:text-3xl font-semibold font-['Outfit'] mt-2 mb-4">
                       Questions about these terms
@@ -185,6 +195,9 @@ const TermsOfServicePage = () => {
                         For any questions regarding these Terms of Service, please contact the
                         INVESTYZ team through the official contact channels available on the
                         website.
+                      </p>
+                      <p className="text-foreground font-medium">
+                        Email: investyzasset@gmail.com
                       </p>
                       <p className="text-foreground font-medium">Website: https://www.investyz.com/</p>
                     </div>
